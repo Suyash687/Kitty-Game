@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} /*
+header {
+  background-color: black;
+  display: flex;
+  color: brown;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  background-color: #f3f3f3;
+  box-shadow: -1px 1px 20px 0px #00000066;
+
+  height: 45px;
+  display: flex;
+  margin: 4px 55px 8px 55px;
+}
+.menu {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+.menu .bar1,
+.bar2,
+.bar3 {
+  width: 36px;
+  height: 4px;
+  margin: -2px 18px;
+  padding: 2px 4px;
+  background-color: black;
+  margin-top: 7px;
+  transition: 0.5s;
+} */
+
+.gover {
+  visibility: hidden;
+  text-align: center;
+  font-size: 55px;
+}
+.gover h1 {
+  color: #ff0030;
+  font-family: system-ui;
+  text-shadow: 11px 7px 12px black;
+}
+#score {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(./img/border.png) 30 stretch;
+  width: 201px;
+  position: absolute;
+  top: 53px;
+  right: 23px;
+  font-size: 20px;
+  padding: 10px;
+  font-family: cursive;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(./img/2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.container .player {
+  background: url(./img/cat.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 185px;
+  height: 108px;
+  position: absolute;
+  bottom: 66px;
+  padding: 18px 0px 12px 63px;
+}
+.obstacle {
+  background: url(./img/dino.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 185px;
+  height: 108px;
+  bottom: 79px;
+  position: absolute;
+  left: 80vw;
+}
+.obstacleanim {
+  animation: obstacleanim 3s linear infinite;
+}
+
+.animateplayer {
+  animation: cat 0.7s linear;
+}
+
+@keyframes cat {
+  0% {
+    bottom: 66px;
+  }
+  50% {
+    bottom: 245px;
+  }
+  100% {
+    bottom: 66px;
+  }
+}
+
+@keyframes obstacleanim {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
